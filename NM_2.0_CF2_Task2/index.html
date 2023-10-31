@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width, initial-scale=1.0">
+    <title>Employee form</title>
+</head>
+<script>
+  // Function to generate a random color in hexadecimal format
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 12)];
+    }
+    return color;
+  }
+
+  // Function to change the background color
+  function changeBackgroundColor() {
+    document.body.style.backgroundColor = getRandomColor();
+  }
+
+  // Set an interval to change the background color every 3 seconds (3000 milliseconds)
+  setInterval(changeBackgroundColor, 200);
+</script>
+<body>
+    <center>
+    <form>
+        <h3 style="text-align:center;">Employee form</h3>
+        <lable>Enter Your Name:</label>
+        <input type="text"><br><br>
+        <label>Enter Your Department:</label>
+        <input type="text"><br><br><br>
+        <label>Tell me about Yourself:</label>
+        <textarea></textarea><br>
+        <label>Do you excercise at home?</label>
+        <input type="radio">
+        <label>Yes</label>
+        <input type="radio">
+        <label>No</label><br><br>
+        <p>How do you like to read about your favorite topic?</p>
+        <input type="checkbox">
+        <label>Books</label>
+        <input type="checkbox">
+        <label>Online resources</label>
+        <input type="checkbox">
+        <label>Phone apps</label>
+        <input type="checkbox">
+        <label>Magazines</label><br><br>
+        <label>What genere of Movies do you like?</label>
+        <select>
+            <option>comedy</option>
+            <option>family</option>
+            <option>thriller</option>
+            <option>Romantic</option>
+            <option>Action</option>
+            <option>Horror</option>
+            <option>cartoon</option>
+        </select><br><br>
+        <button type="Submit" style=" align-items: center; margin: 5%; top:2%">Submit Form</button>
+    </form>
+    </center>
+</body>
+</html>
